@@ -8,9 +8,9 @@ function saveInput() {
 
 function spaceCheck(){
     if(/\s/.test(passwords)){
-        document.getElementById('spaces').innerText = "The password has spaces";
+        document.getElementById('spaces').innerText = `The password has spaces`;
     }
     else{
-        document.getElementById('spaces').innerText = "The password has no spaces";
+        document.getElementById('spaces').innerText = `The password has no spaces`;
     }
 }
