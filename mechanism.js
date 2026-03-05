@@ -42,5 +42,13 @@ function saveInput() {
     else{
         document.getElementById('onlychar').innerText = "There are not only characters in the password";
     }
+    let cheese = "password";
+    //Check to see if "password" is within the password
+    if(passwords.toLowerCase().includes(cheese.toLowerCase())){
+        document.getElementById('substring').innerText = "There is a commonly used phrase in the password";
+    }
+    else{
+        document.getElementById('substring').innerText = "There are no commonly used phrases in the password";
+    }
 }
 
