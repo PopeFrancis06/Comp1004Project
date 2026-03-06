@@ -59,6 +59,6 @@ function saveInput() {
 
     //Length check
     let length = passwords.length();
-    document.getElementById('length').innerText = length;
+    document.getElementById('length').innerText +=" "+ length;
 }
 
