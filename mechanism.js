@@ -48,10 +48,12 @@ function saveInput() {
 
 
     //Check to see if any of the commonly used words are within the password
-    if(passwords.toLowerCase().includes(commonWords.toLowerCase())){
+    const lower = passwords.toLowerCase();
+
+    if (commonWords.some(word => lower.includes(word))) {
         document.getElementById('substring').innerText = "There is a commonly used phrase in the password";
-    }
-    else{
+    } 
+    else {
         document.getElementById('substring').innerText = "There are no commonly used phrases in the password";
     }
 }
