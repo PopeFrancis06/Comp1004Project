@@ -2,3 +2,8 @@ header{
     text-align: center;
     font-size: 48px;
 }
+.textBox{
+    height: 500px;
+    padding: 20px;
+    border: 10px blueviolet;
+}
