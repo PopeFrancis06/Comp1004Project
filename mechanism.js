@@ -56,5 +56,9 @@ function saveInput() {
     else {
         document.getElementById('substring').innerText = "There are no commonly used phrases in the password";
     }
+
+    //Length check
+    let length = passwords.length();
+    document.getElementById('length').innerText = length;
 }
 
