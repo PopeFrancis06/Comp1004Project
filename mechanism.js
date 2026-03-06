@@ -42,9 +42,13 @@ function saveInput() {
     else{
         document.getElementById('onlychar').innerText = "There are not only characters in the password";
     }
-    let cheese = "password";
-    //Check to see if "password" is within the password
-    if(passwords.toLowerCase().includes(cheese.toLowerCase())){
+
+    //List of commonly used words
+    const commonWords = ["password", "123","admin", "pass", "p@ssw0rd", "qwerty", "321", "1q2w3e4r", "demo", "asd", "welcome", "guest", "test", "global", "secret", "user", "p@$$w0rd", "passw0rd", "zxc", "minecraft", "student", "qaz", "2468", "987", "changeme", "111", "222", "333", "444", "555", "666", "777", "888", "999", "000"];
+
+
+    //Check to see if any of the commonly used words are within the password
+    if(passwords.toLowerCase().includes(commonWords.toLowerCase())){
         document.getElementById('substring').innerText = "There is a commonly used phrase in the password";
     }
     else{
