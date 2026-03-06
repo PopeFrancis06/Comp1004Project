@@ -1,9 +1,17 @@
 header{
     text-align: center;
     font-size: 48px;
+    height:10%;
 }
 #textBox{
-    height: 250px;
-    padding: 20px;
-    border: 10px blueviolet;
+    height: 35%;
+    width: 100%;
+}
+#passwordBox{
+    height: 35%;
+    width: 50%;
+}
+#currentPassword{
+    height: 20%;
+    width: 50%;
 }
