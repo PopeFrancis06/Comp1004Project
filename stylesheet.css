@@ -8,18 +8,15 @@ header{
     width: 100%;
 }
 #passwordBox{
-    height: 245px;
-    width: 50%;
+    flex:1;
 }
-#currentPassword{
-    height: 140px;
-    width: 50%;
-}
+
 #sideBySideBox{
     height: 250px;
     width: 100%;
+    display:flex;
 }
 #improvements{
     height:245px;
-    width:50%;
+    flex:1;
 }
