@@ -1,17 +1,17 @@
 header{
     text-align: center;
     font-size: 48px;
-    height:10%;
+    height:170px;
 }
 #textBox{
-    height: 35%;
+    height: 595px;
     width: 100%;
 }
 #passwordBox{
-    height: 35%;
+    height: 595px;
     width: 50%;
 }
 #currentPassword{
-    height: 20%;
+    height: 340px;
     width: 50%;
 }
