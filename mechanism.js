@@ -2,45 +2,48 @@ document.getElementById('passwordSave').addEventListener('click', saveInput);
 function saveInput() {
     let passwords = document.getElementById('password').value;
     document.getElementById('grade').innerText = `Password: ${passwords}`;
+
+    var correctEmoji = '\u2705';
+    var wrongEmoji = '\u274E';
     
     //Checks for spaces
     if(/\s/.test(passwords)){
-        document.getElementById('spaces').innerText = "There are spaces in the password ";
+        document.getElementById('spaces').innerText = String.fromCodePoint(wrongEmoji);
     }
     else{
-        document.getElementById('spaces').innerText = "There are no spaces in the password";
+        document.getElementById('spaces').innerText = String.fromCodePoint(correctEmoji);
     }
 
     //Checks for digits
     if(/\d/.test(passwords)){
-        document.getElementById('digits').innerText = "There are digits in the password";
+        document.getElementById('digits').innerText = String.fromCodePoint(correctEmoji);
     }
     else{
-        document.getElementById('digits').innerText = "There are no digits in the password";
+        document.getElementById('digits').innerText = String.fromCodePoint(wrongEmoji);
     }
 
     //Check for special characters
     if(/[^A-Za-z0-9\s]/.test(passwords)){
-        document.getElementById('schar').innerText = "There are special characters in the password";
+        document.getElementById('schar').innerText = String.fromCodePoint(correctEmoji);
     }
     else{
-        document.getElementById('schar').innerText = "There are no special characters in the password";
+        document.getElementById('schar').innerText = String.fromCodePoint(wrongEmoji);
     }
 
     //Check for upper case letters
     if(/[A-Z]/.test(passwords)){
-        document.getElementById('upperchar').innerText = "There are upper case characters in the password";
+        document.getElementById('upperchar').innerText = String.fromCodePoint(correctEmoji);
     }
     else{
-        document.getElementById('upperchar').innerText = "There are no upper case characters in the password";
+        document.getElementById('upperchar').innerText = String.fromCodePoint(wrongEmoji);
     }
 
     //Check for only characters
     if(/^[A-Za-z]+$/.test(passwords)){
-        document.getElementById('onlychar').innerText = "There are only characters in the password";
+        document.getElementById('onlychar').innerText = String.fromCodePoint(wrongEmoji);
     }
     else{
-        document.getElementById('onlychar').innerText = "There are not only characters in the password";
+        document.getElementById('onlychar').innerText = String.fromCodePoint(correctEmoji);
     }
 
     //List of commonly used words
@@ -51,10 +54,10 @@ function saveInput() {
     const lower = passwords.toLowerCase();
 
     if (commonWords.some(word => lower.includes(word))) {
-        document.getElementById('substring').innerText = "There is a commonly used phrase in the password";
+        document.getElementById('substring').innerText = String.fromCodePoint(wrongEmoji);
     } 
     else {
-        document.getElementById('substring').innerText = "There are no commonly used phrases in the password";
+        document.getElementById('substring').innerText = String.fromCodePoint(correctEmoji);
     }
 
     //Length check
