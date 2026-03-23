@@ -19,6 +19,7 @@ header{
 #improvements{
     height:245px;
     flex:1;
+    display:flex;
 }
 input{
     font-size: 48px;
@@ -29,4 +30,10 @@ input{
 }
 #paraTitle{
     font-size: 36px;
+}
+#words{
+    flex:1;
+}
+#checkBoxes{
+    flex:1;
 }
