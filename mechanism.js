@@ -1,7 +1,8 @@
 document.getElementById('passwordSave').addEventListener('click', saveInput);
 function saveInput() {
     let passwords = document.getElementById('password').value;
-    document.getElementById('grade').innerText = `Password: ${passwords}`;
+
+    let grades = 0;
 
     var correctEmoji = "✅";
     var wrongEmoji = "❎";
@@ -12,11 +13,13 @@ function saveInput() {
     }
     else{
         document.getElementById('spaces').innerText = correctEmoji;
+        grades++;
     }
 
     //Checks for digits
     if(/\d/.test(passwords)){
         document.getElementById('digits').innerText = correctEmoji;
+        grades++;
     }
     else{
         document.getElementById('digits').innerText = wrongEmoji;
@@ -25,6 +28,7 @@ function saveInput() {
     //Check for special characters
     if(/[^A-Za-z0-9\s]/.test(passwords)){
         document.getElementById('schar').innerText = correctEmoji;
+        grades++;
     }
     else{
         document.getElementById('schar').innerText = wrongEmoji;
@@ -33,6 +37,7 @@ function saveInput() {
     //Check for upper case letters
     if(/[A-Z]/.test(passwords)){
         document.getElementById('upperchar').innerText = correctEmoji;
+        grades++;
     }
     else{
         document.getElementById('upperchar').innerText = wrongEmoji;
@@ -44,6 +49,7 @@ function saveInput() {
     }
     else{
         document.getElementById('onlychar').innerText = correctEmoji;
+        grades++;
     }
 
     //List of commonly used words
@@ -58,11 +64,43 @@ function saveInput() {
     } 
     else {
         document.getElementById('substring').innerText = correctEmoji;
+        grades++;
     }
 
     //Length check
     let length = passwords.length;
-    document.getElementById('len').innerText ="Length: "+ length;
+    if (12<=length<17){
+        document.getElementById('len').innerText = correctEmoji;
+        grades++;
+    }
+    else{
+        document.getElementById('len').innerText = wrongEmoji;
+    }
+
+    //Grade outputer
+    switch(grades){
+        case 1:
+            document.getElementById('grade').innerText = "F";
+            break;
+        case 2:
+            document.getElementById('grade').innerText = "E";
+            break;
+        case 3:
+            document.getElementById('grade').innerText = "D";
+            break;
+        case 4:
+            document.getElementById('grade').innerText = "C";
+            break;
+        case 5:
+            document.getElementById('grade').innerText = "B";
+            break;
+        case 6:
+            document.getElementById('grade').innerText = "A";
+            break;
+        case 7:
+            document.getElementById('grade').innerText = "A*";
+            break;
+    }
 }
 
 
