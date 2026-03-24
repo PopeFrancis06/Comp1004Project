@@ -69,7 +69,7 @@ function saveInput() {
 
     //Length check
     let length = passwords.length;
-    if (12<=length<17){
+    if (length<17 && lenght>11){
         document.getElementById('len').innerText = correctEmoji;
         grades++;
     }
