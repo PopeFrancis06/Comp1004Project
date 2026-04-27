@@ -30,6 +30,7 @@ header{
 input{
     font-size: 48px;
     padding: 8px;
+    background-color:#b4b4b4;
 }
 #paragraph{
     font-size: 24px;
