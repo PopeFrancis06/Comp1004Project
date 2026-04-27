@@ -2,6 +2,9 @@ header{
     text-align: center;
     font-size: 48px;
     height:70px;
+    width:350px;
+    background-color: #545454;
+    color:white;
 }
 #textBox{
     height: 245px;
