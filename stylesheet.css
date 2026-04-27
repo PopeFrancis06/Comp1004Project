@@ -11,6 +11,7 @@ header{
 #passwordBox{
     flex:1;
     margin:8px;
+    height:245px;
     background-color:#b4b4b4;
 }
 
