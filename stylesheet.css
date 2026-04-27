@@ -5,6 +5,7 @@ header{
     width:600px;
     background-color: #545454;
     color:white;
+    align-content: center;
 }
 #textBox{
     height: 245px;
