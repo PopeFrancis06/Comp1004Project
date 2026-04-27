@@ -10,6 +10,8 @@ header{
 }
 #passwordBox{
     flex:1;
+    margin:8px;
+    background-color:#b4b4b4;
 }
 
 #sideBySideBox{
@@ -21,10 +23,8 @@ header{
     height:245px;
     flex:1;
     display:flex;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 8px;
+    margin: 8px;
+    background-color:#b4b4b4;
 }
 input{
     font-size: 48px;
