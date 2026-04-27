@@ -50,3 +50,15 @@ input{
 #checkBoxes{
     flex:1;
 }
+#headerContainer{
+    display:flex;
+}
+#leftSide{
+    flex:1;
+}
+#rightSide{
+    flex:1;
+}
+#headerBox{
+    flex:1;
+}
