@@ -21,6 +21,10 @@ header{
     height:245px;
     flex:1;
     display:flex;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 8px;
 }
 input{
     font-size: 48px;
