@@ -1,4 +1,6 @@
 header{
+    /*Modifys the header by making the text in the centre, increasing the size of the text
+    and increasing the size and changing the colour of the box its within*/
     text-align: center;
     font-size: 48px;
     height:70px;
@@ -8,11 +10,13 @@ header{
     align-content: center;
 }
 #textBox{
+    /*This gives a fixed height to the box and also ensures it uses the entire width of the screens and changes the colour of the box*/
     height: 245px;
     width: 100%;
     background-color: #67c894;
 }
 #passwordBox{
+    /*Provides a flex value to the box along with a max height and a given margin and a colour to the box*/
     flex:1;
     margin:8px;
     height:280px;
@@ -20,42 +24,61 @@ header{
 }
 
 #sideBySideBox{
+    /*Provides a fixed height to the box of 300px and displays flex so that both the password box and improvements are within*/
     height: 300px;
     width: 100%;
     display:flex;
 }
 #improvements{
+    /*Provides a fixed height to the box along with giving a flex value, margin and colour*/
     height:280px;
     flex:1;
     margin: 8px;
     background-color:#b4b4b4;
 }
 input{
+    /*increases the text size in the text box along with ensuring it has the same colour background as the box its within*/
     font-size: 48px;
     padding: 8px;
     background-color:#b4b4b4;
 }
 #paragraph{
+    /*Changes the size of the text in the paragraph and changes the colour of the text to white*/
     font-size: 24px;
     color:white;
 }
 #paraTitle{
+    /*changes the size of the text of the title and changes the colour to white*/
     font-size: 36px;
     color:white;
 }
 #headerContainer{
+    /*gives the possiblity of flex to the top boxes*/
     display:flex;
 }
 #leftSide{
+    /*gives a flex value of 1 to the box*/
     flex:1;
 }
 #rightSide{
+    /*gives a flex value of 1 to the box*/
     flex:1;
 }
 #headerBox{
+    /*gives a flex value of 1 to the box*/
     flex:1;
 }
 #currentPassword{
+    /*
+    This makes a circle by:
+    providing a margin at the top of the box
+    giving a width and height of 100px to the circle
+    ensuring the border is solid and has sa thickness of 5px
+    displays flex
+    aligns all of the parts to the centre
+    makes the text both bold and enlarged to 48px
+    changes the colour of the text and the circle
+    */
     margin-top: 8px;
     width: 100px;
     height: 100px;
@@ -69,11 +92,13 @@ input{
     color:#11944e;
 }
 #passwordTextBox{
+    /*gives flex whilst also aligning all items to the centre*/
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 #passwordTextBox input,
 #passwordTextBox button {
+    /*Provides a margin to both the text box and the submit button*/
   margin: 5px 0;
 }
