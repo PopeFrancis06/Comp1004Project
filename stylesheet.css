@@ -66,3 +66,6 @@ input{
     border: 2px solid #000;      /* circle outline */
     font-weight: bold;
 }
+#passwordTextBox{
+    text-align:center;
+}
