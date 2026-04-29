@@ -18,38 +18,42 @@ function saveInput() {
     }
 
     //Checks for digits
+    let digitsPhrase = "The password contains digits";
     if(/\d/.test(passwords)){
-        document.getElementById('digits').innerText = correctEmoji;
+        document.getElementById('digitsWord').innerText = digitsPhrase + correctEmoji;
         grades++;
     }
     else{
-        document.getElementById('digits').innerText = wrongEmoji;
+        document.getElementById('digitsWord').innerText = digitsPhrase + wrongEmoji;
     }
 
     //Check for special characters
+    let scharPhrase = "The password contains special characters";
     if(/[^A-Za-z0-9\s]/.test(passwords)){
-        document.getElementById('schar').innerText = correctEmoji;
+        document.getElementById('scharWord').innerText = scharPhrase + correctEmoji;
         grades++;
     }
     else{
-        document.getElementById('schar').innerText = wrongEmoji;
+        document.getElementById('scharWord').innerText = scharPhrase + wrongEmoji;
     }
 
     //Check for upper case letters
+    let uppercahrPhrase = "The password contains uppercase characters";
     if(/[A-Z]/.test(passwords)){
-        document.getElementById('upperchar').innerText = correctEmoji;
+        document.getElementById('uppercharWord').innerText = uppercharPhrase + correctEmoji;
         grades++;
     }
     else{
-        document.getElementById('upperchar').innerText = wrongEmoji;
+        document.getElementById('uppercharWord').innerText = uppercharPhrase + wrongEmoji;
     }
 
     //Check for only characters
+    let onlycharPhrase = "The password does not only contain lowercase characters";
     if(/^[A-Za-z]+$/.test(passwords)){
-        document.getElementById('onlychar').innerText = wrongEmoji;
+        document.getElementById('onlycharWord').innerText = onlycharPhrase + wrongEmoji;
     }
     else{
-        document.getElementById('onlychar').innerText = correctEmoji;
+        document.getElementById('onlycharWord').innerText = onlycharPhrase + correctEmoji;
         grades++;
     }
 
@@ -60,22 +64,24 @@ function saveInput() {
     //Check to see if any of the commonly used words are within the password
     const lower = passwords.toLowerCase();
 
+    let substringPhrase = "The password does not contain commonly used phrases within";
     if (commonWords.some(word => lower.includes(word))) {
-        document.getElementById('substring').innerText = wrongEmoji;
+        document.getElementById('substringWord').innerText = substringPhrase + wrongEmoji;
     } 
     else {
-        document.getElementById('substring').innerText = correctEmoji;
+        document.getElementById('substringWord').innerText = substringPhrase + correctEmoji;
         grades++;
     }
 
     //Length check
     let length = passwords.length;
+    let lenPhrase = "The password is within 12 - 16 characters long";
     if (length<17 && length>11){
-        document.getElementById('len').innerText = correctEmoji;
+        document.getElementById('lenWord').innerText = lenPhrase + correctEmoji;
         grades++;
     }
     else{
-        document.getElementById('len').innerText = wrongEmoji;
+        document.getElementById('lenWord').innerText = lenPhrase + wrongEmoji;
     }
 
     //Grade outputer
