@@ -15,17 +15,17 @@ header{
 #passwordBox{
     flex:1;
     margin:8px;
-    height:245px;
+    height:260px;
     background-color:#b4b4b4;
 }
 
 #sideBySideBox{
-    height: 250px;
+    height: 270px;
     width: 100%;
     display:flex;
 }
 #improvements{
-    height:245px;
+    height:260px;
     flex:1;
     margin: 8px;
     background-color:#b4b4b4;
