@@ -38,7 +38,7 @@ function saveInput() {
     }
 
     //Check for upper case letters
-    let uppercahrPhrase = "The password contains uppercase characters";
+    let uppercharPhrase = "The password contains uppercase characters";
     if(/[A-Z]/.test(passwords)){
         document.getElementById('uppercharWord').innerText = uppercharPhrase + correctEmoji;
         grades++;
