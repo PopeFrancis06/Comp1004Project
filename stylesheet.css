@@ -69,3 +69,7 @@ input{
 #passwordTextBox{
     text-align:center;
 }
+#passwordTextBox input,
+#passwordTextBox button {
+  margin: 5px 0;
+}
