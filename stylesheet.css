@@ -55,3 +55,14 @@ input{
 #headerBox{
     flex:1;
 }
+#currentPassword{
+    display: inline-flex;        /* lets us center the text inside */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 50%;          /* makes it a circle */
+    border: 2px solid #000;      /* circle outline */
+    font-weight: bold;
+}
