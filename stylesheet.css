@@ -65,6 +65,7 @@ input{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 48px;
 }
 #passwordTextBox{
     display: flex;
