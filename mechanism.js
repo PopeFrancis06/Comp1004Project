@@ -10,10 +10,10 @@ function saveInput() {
     //Checks for spaces
     let spacesPhrase = document.getElementById('spacesWord').innerText;
     if(/\s/.test(passwords)){
-        document.getElementById('spaces').innerText = spacesPhrase + wrongEmoji;
+        document.getElementById('spacesWord').innerText = spacesPhrase + wrongEmoji;
     }
     else{
-        document.getElementById('spaces').innerText = spacesPhrase + correctEmoji;
+        document.getElementById('spacesWord').innerText = spacesPhrase + correctEmoji;
         grades++;
     }
 
