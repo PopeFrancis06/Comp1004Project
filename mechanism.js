@@ -8,7 +8,7 @@ function saveInput() {
     var wrongEmoji = "❎";
     
     //Checks for spaces
-    let spacesPhrase = document.getElementById('spacesWord').value;
+    let spacesPhrase = document.getElementById('spacesWord').innerText;
     if(/\s/.test(passwords)){
         document.getElementById('spaces').innerText = spacesPhrase + wrongEmoji;
     }
